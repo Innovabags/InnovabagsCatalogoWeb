@@ -2,7 +2,7 @@ import logo from '../assets/logo.png'
 
 export default function Header() {
   return (
-    <header className="relative pt-10 pb-20 md:pb-16 mb-8 border-b border-gray-300 flex flex-col items-center bg-white w-full rounded-b-3xl">
+    <header className="relative pt-10 pb-36 md:pb-24 mb-8 border-b border-gray-300 flex flex-col items-center bg-white w-full rounded-b-3xl">
       {/* Contenedor del Logo */}
       <div className="mb-4">
         <img 
@@ -23,8 +23,8 @@ export default function Header() {
         COLECCIÓN EXCLUSIVA 2026
       </div>
 
-      {/* Contenedor flotante derecho: Redes Sociales y Dirección */}
-      <div className="absolute bottom-4 right-4 md:bottom-8 md:right-10 flex flex-col items-end gap-3">
+      {/* Contenedor flotante: centrado en móvil, a la derecha en PC */}
+      <div className="absolute bottom-5 left-0 w-full flex flex-col items-center md:w-auto md:left-auto md:right-10 md:bottom-8 md:items-end gap-3">
         {/* Redes */}
         <div className="flex gap-4">
           {/* Instagram */}
