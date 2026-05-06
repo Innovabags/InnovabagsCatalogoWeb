@@ -22,56 +22,54 @@ export default function Brands() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         {/* Tarjeta MIA ROSE */}
-        <div className="relative h-[400px] rounded-3xl overflow-hidden bg-gray-50 flex flex-col justify-end p-8 md:p-10 shadow-md border border-gray-100">
+        <div className="relative rounded-3xl overflow-hidden bg-gray-50 shadow-md border border-gray-100">
           <img 
             src={imgMiaRose} 
             alt="Mia Rose" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-auto block"
           />
           
           {/* Capa de gradiente oscuro solo en la parte inferior */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-90"></div>
 
-          <div className="relative z-10 flex flex-col items-center text-center">
-             <h3 className="font-sans text-3xl md:text-4xl tracking-widest text-white uppercase mb-2 drop-shadow-md">Mia Rose</h3>
-             <p className="text-[10px] text-gray-200 uppercase tracking-[0.2em] leading-relaxed mb-6">
-               Elegancia y estilo en cada detalle
-             </p>
+          <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 z-10 flex flex-col items-center text-center">
              <a 
                href={brandLinks.miaRose}
                target="_blank"
                rel="noopener noreferrer"
-               className="bg-white/95 text-gray-900 text-[10px] font-bold inline-block uppercase tracking-widest px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all shadow-xl"
+               className="bg-white/95 text-gray-900 text-[10px] font-bold inline-block uppercase tracking-widest px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all shadow-xl mb-4"
              >
                Ver Catálogo
              </a>
+             <p className="text-[10px] text-gray-200 uppercase tracking-[0.2em] leading-relaxed">
+               Elegancia y estilo en cada detalle
+             </p>
           </div>
         </div>
 
         {/* Tarjeta JANTELL */}
-        <div className="relative h-[400px] rounded-3xl overflow-hidden bg-gray-50 flex flex-col justify-end p-8 md:p-10 shadow-md border border-gray-100">
+        <div className="relative rounded-3xl overflow-hidden bg-gray-50 shadow-md border border-gray-100">
           <img 
             src={imgJantell} 
             alt="Jantell" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-auto block"
           />
           
           {/* Capa de gradiente oscuro solo en la parte inferior */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-90"></div>
 
-          <div className="relative z-10 flex flex-col items-center text-center">
-             <h3 className="font-sans text-3xl md:text-4xl tracking-widest text-white uppercase mb-2 drop-shadow-md">Jantell</h3>
-             <p className="text-[10px] text-gray-200 uppercase tracking-[0.2em] leading-relaxed mb-6">
-               Diseños modernos para mujeres sofisticadas.
-             </p>
+          <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 z-10 flex flex-col items-center text-center">
              <a 
                href={brandLinks.jantell}
                target="_blank"
                rel="noopener noreferrer"
-               className="bg-white/95 text-gray-900 text-[10px] font-bold inline-block uppercase tracking-widest px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all shadow-xl"
+               className="bg-white/95 text-gray-900 text-[10px] font-bold inline-block uppercase tracking-widest px-8 py-3 rounded-full hover:bg-sky-500 hover:text-white transition-all shadow-xl mb-4"
              >
                Ver Catálogo
              </a>
+             <p className="text-[10px] text-gray-200 uppercase tracking-[0.2em] leading-relaxed">
+               Diseños modernos para mujeres sofisticadas.
+             </p>
           </div>
         </div>
 

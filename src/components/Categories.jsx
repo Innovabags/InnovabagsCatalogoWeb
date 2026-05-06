@@ -6,6 +6,7 @@ import imgMorrales from '../assets/Morrales.jpg'
 import imgCarteras from '../assets/Carteras.jpg'
 import imgBolsos from '../assets/Bolsos.jpg'
 import imgBilleteras from '../assets/Billeteras.jpg'
+import imgVanites from '../assets/Vanites.jpg'
 
 export default function Categories() {
   const cats = [
@@ -39,6 +40,12 @@ export default function Categories() {
       link: 'https://photos.google.com/share/LINK_BILLETERAS',
       image: imgBilleteras
     },
+    { 
+      id: 6, 
+      title: 'Vanites', 
+      link: 'https://photos.google.com/share/LINK_VANITES',
+      image: imgVanites
+    },
   ]
 
   return (
@@ -51,8 +58,8 @@ export default function Categories() {
         <div className="h-[2px] w-28 bg-sky-400/80 rounded-full"></div>
       </div>
 
-      {/* Volvemos a colocar todo en 5 columnas en la misma línea, aprovechando las proporciones más altas */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 lg:gap-4">
+      {/* Ajustamos a 3 columnas en tablet y 6 en pantallas grandes para que entren todas de forma armónica */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
         {cats.map(cat => (
           <div key={cat.id} className="w-full">
             <CategoryCard title={cat.title} link={cat.link} image={cat.image} />
