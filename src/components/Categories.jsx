@@ -37,13 +37,13 @@ export default function Categories() {
     { 
       id: 5, 
       title: 'Billeteras', 
-      link: 'https://photos.google.com/share/LINK_BILLETERAS',
+      link: 'https://photos.app.goo.gl/5CTJQFmoWff1CL66A',
       image: imgBilleteras
     },
     { 
       id: 6, 
       title: 'Vanites', 
-      link: 'https://photos.google.com/share/LINK_VANITES',
+      link: 'https://photos.app.goo.gl/bYqsTvUXEyzs2DDf7',
       image: imgVanites
     },
   ]
