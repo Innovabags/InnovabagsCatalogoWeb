@@ -13,25 +13,25 @@ export default function Categories() {
     { 
       id: 1, 
       title: 'Mochilas', 
-      link: 'https://photos.app.goo.gl/nqAyeY5raty1Sg9o6',
+      link: 'https://photos.app.goo.gl/JegAodp1wtqB19h16',
       image: imgMochilas
     },
     { 
       id: 2, 
       title: 'Morrales', 
-      link: 'https://photos.app.goo.gl/4fKHNvqnLdkfZ2si9',
+      link: 'https://photos.app.goo.gl/KTZFF3Txn3Dx2s8C9',
       image: imgMorrales
     },
     { 
       id: 3, 
       title: 'Carteras', 
-      link: 'https://photos.app.goo.gl/XdfQuC356wcHGy659',
+      link: 'https://photos.app.goo.gl/M2YmFD3JsfvCmPNi6',
       image: imgCarteras
     },
     { 
       id: 4, 
       title: 'Bolsos', 
-      link: 'https://photos.app.goo.gl/Hzjs68sH4S28Sycd7',
+      link: 'https://photos.app.goo.gl/18S4ao63KbCYs9aF8',
       image: imgBolsos
     },
     { 

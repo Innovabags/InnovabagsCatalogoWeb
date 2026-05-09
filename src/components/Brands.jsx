@@ -4,8 +4,8 @@ import imgJantell from '../assets/Jantell.jpg';
 export default function Brands() {
   // Aquí puedes actualizar los links reales de tus álbumes
   const brandLinks = {
-    miaRose: "https://photos.google.com/share/LINK_MORRALES",
-    jantell: "https://photos.google.com/share/LINK_JANTELL"
+    miaRose: "https://photos.app.goo.gl/yZENotcCPgnoU9Mq6",
+    jantell: "https://photos.app.goo.gl/t2UMsnrYyGaQXPFa8"
   };
 
   return (
