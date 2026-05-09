@@ -2,14 +2,29 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-[#1a1a1a] text-white py-12 mt-10 rounded-t-[3rem]">
-        <div className="max-w-[1400px] w-[92%] mx-auto px-4 flex flex-col items-center gap-8">
+        <div className="max-w-[1400px] w-[92%] mx-auto px-4 flex flex-col items-center gap-12">
           
-          {/* Sección Síguenos */}
-          <div className="flex flex-col items-center gap-5">
-            <span className="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-500">
-              Síguenos
-            </span>
-            <div className="flex gap-5">
+          {/* Contenedor Superior: 2 Columnas (Estilo Editorial) */}
+          <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
+            
+            {/* Izquierda: Texto Estratégico con línea de acento */}
+            <div className="text-center md:text-left flex flex-col items-center md:items-start max-w-xl">
+              <h3 className="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-500 mb-4 md:pl-5">
+                Sobre InnovaBags
+              </h3>
+              <div className="md:border-l-2 md:border-sky-400 md:pl-5">
+                <p className="text-[12px] md:text-[13px] text-gray-400 leading-relaxed font-light">
+                  Tu tienda especializada en carteras, mochilas, morrales, vanites y bolsos de tendencia. Encuentra marcas exclusivas como <strong className="font-medium text-gray-200">Mia Rose</strong> y <strong className="font-medium text-gray-200">Jantell</strong> en el corazón de Lima, Perú. Realizamos envíos rápidos y seguros a todo el país.
+                </p>
+              </div>
+            </div>
+
+            {/* Derecha: Sección Síguenos */}
+            <div className="flex flex-col items-center md:items-end gap-5">
+              <span className="text-[11px] tracking-[0.4em] uppercase font-bold text-gray-500">
+                Síguenos
+              </span>
+              <div className="flex gap-5">
               {/* Instagram */}
               <a href="https://www.instagram.com/innovabagscarteras/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-gray-800 flex items-center justify-center hover:bg-sky-500 hover:border-sky-500 hover:scale-110 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -24,13 +39,15 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          </div>
 
           {/* Créditos del equipo */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="h-[1px] w-10 bg-gray-800"></div>
-            <p className="text-[10px] text-gray-500 tracking-[0.2em] uppercase">
-              Desarrollado por <span className="text-sky-400 font-bold text-xs">INNOVABAGS</span>
-            </p>
+          <div className="flex flex-col items-center mt-2">
+            <div className="border border-sky-400 rounded-full px-6 py-2.5 bg-sky-400/5">
+              <p className="text-[10px] text-gray-400 tracking-[0.2em] uppercase">
+                Desarrollado por <span className="text-sky-400 font-bold text-xs ml-1">INNOVABAGS</span>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
