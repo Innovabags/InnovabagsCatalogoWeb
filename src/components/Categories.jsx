@@ -21,14 +21,14 @@ export default function Categories() {
       title: 'Morrales', 
       link: 'https://photos.app.goo.gl/KTZFF3Txn3Dx2s8C9',
       image: imgMorrales,
-      imageClass: 'object-[45%_center]'
+      imageClass: 'object-[52%_center]'
     },
     { 
       id: 3, 
       title: 'Carteras', 
       link: 'https://photos.app.goo.gl/M2YmFD3JsfvCmPNi6',
       image: imgCarteras,
-      imageClass: 'object-[45%_center]'
+      imageClass: 'object-[55%_center]'
     },
     { 
       id: 4, 
