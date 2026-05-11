@@ -1,4 +1,4 @@
-export default function CategoryCard({ title, link, image }) {
+export default function CategoryCard({ title, link, image, imageClass = "" }) {
   return (
     <div className="flex flex-col items-center group">
       {/* Contenedor de la imagen (separado del texto) */}
@@ -8,7 +8,7 @@ export default function CategoryCard({ title, link, image }) {
           <img 
             src={image} 
             alt={title} 
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${imageClass}`}
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-gray-300 group-hover:text-sky-400 transition-colors">

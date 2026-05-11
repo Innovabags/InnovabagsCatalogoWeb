@@ -20,19 +20,22 @@ export default function Categories() {
       id: 2, 
       title: 'Morrales', 
       link: 'https://photos.app.goo.gl/KTZFF3Txn3Dx2s8C9',
-      image: imgMorrales
+      image: imgMorrales,
+      imageClass: 'object-[45%_center]'
     },
     { 
       id: 3, 
       title: 'Carteras', 
       link: 'https://photos.app.goo.gl/M2YmFD3JsfvCmPNi6',
-      image: imgCarteras
+      image: imgCarteras,
+      imageClass: 'object-[45%_center]'
     },
     { 
       id: 4, 
       title: 'Bolsos', 
       link: 'https://photos.app.goo.gl/18S4ao63KbCYs9aF8',
-      image: imgBolsos
+      image: imgBolsos,
+      imageClass: 'object-[45%_center]'
     },
     { 
       id: 5, 
@@ -62,7 +65,12 @@ export default function Categories() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
         {cats.map(cat => (
           <div key={cat.id} className="w-full">
-            <CategoryCard title={cat.title} link={cat.link} image={cat.image} />
+            <CategoryCard 
+              title={cat.title} 
+              link={cat.link} 
+              image={cat.image} 
+              imageClass={cat.imageClass} 
+            />
           </div>
         ))}
       </div>
